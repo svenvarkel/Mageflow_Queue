@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<config>
+    <modules>
+        <Mageflow_Queue>
+            <version>0.0.1</version>
+        </Mageflow_Queue>
+    </modules>
+    <global>
+        <helpers>
+            <mageflow_queue>
+                <class>Mageflow_Queue_Helper</class>
+            </mageflow_queue>
+        </helpers>
+        <models>
+            <mageflow_queue>
+                <class>Mageflow_Queue_Model</class>
+            </mageflow_queue>
+        </models>
+    </global>
+    <queues>
+        <testQueueBnsltkd>
+            <label>queueName</label>
+            <class>mageflow_queue/handler_test</class>
+            <workers>
+                <worker1>
+                    <class>mageflow_queue/worker_test</class>
+                    <method>run</method>
+                </worker1>
+            </workers>
+        </testQueueBnsltkd>
+        <testQueueSqs>
+            <label>Test queue 2 at SQS</label>
+            <class>mageflow_queue/handler_test</class>
+            <workers>
+                <worker1>
+                    <class>mageflow_queue/worker_test</class>
+                    <method>run</method>
+                </worker1>
+            </workers>
+        </testQueueSqs>
+    </queues>
+</config>

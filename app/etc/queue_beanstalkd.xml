@@ -1,0 +1,15 @@
+<?xml version="1.0"?>
+<config>
+    <global>
+        <queue>
+            <backend>beanstalkd</backend>
+            <beanstalkd>
+                <servers>
+                    <server>
+                        <host>127.0.0.1</host>
+                    </server>
+                </servers>
+            </beanstalkd>
+        </queue>
+    </global>
+</config>
