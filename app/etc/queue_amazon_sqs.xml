@@ -5,9 +5,9 @@
             <backend>amazonsqs</backend>
             <amazonsqs>
                 <connection>
-                    <key>AKIAJBMZBV7VBA74CAQA</key>
-                    <secret>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</secret>
-                    <region>us-east-1</region>
+                    <key>{{AWS SQS KEY}}</key>
+                    <secret>{{AWS SQS SECRET}}</secret>
+                    <region>{{AWS SQS REGION}}</region>
                 </connection>
             </amazonsqs>
         </queue>
