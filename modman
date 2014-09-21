@@ -1,3 +1,6 @@
+#
+# Mageflow_Queue modman files
+#
 app/code/community/Mageflow/Queue   app/code/community/Mageflow/Queue
-etc/queue_amazon_sqs.xml            etc/queue_amazon_sqs.xml
-etc/queue_beanstalkd.xml            etc/queue_beanstalkd.xml
+app/etc/queue_amazon_sqs.xml            app/etc/queue_amazon_sqs.xml
+app/etc/queue_beanstalkd.xml            app/etc/queue_beanstalkd.xml
