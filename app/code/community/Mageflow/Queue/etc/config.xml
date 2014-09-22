@@ -18,7 +18,7 @@
         </models>
     </global>
     <queues>
-        <testQueueBnsltkd>
+        <testQueueBnslktd>
             <label>queueName</label>
             <class>mageflow_queue/handler_test</class>
             <workers>
@@ -27,7 +27,7 @@
                     <method>run</method>
                 </worker1>
             </workers>
-        </testQueueBnsltkd>
+        </testQueueBnslktd>
         <testQueueSqs>
             <label>Test queue 2 at SQS</label>
             <class>mageflow_queue/handler_test</class>
